@@ -18,7 +18,7 @@
 // |  ESC  |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   | BSPC  |
 // |  TAB  |  Q  |  W  |  E   |  R   |  T   |                   |  Y   |  U    |  I    |  O   |   P   |   -   |
 // |  CTRL |  A  |  S  |  D   |  F   |  G   |                   |  H   |  J    |  K    |  L   |   ;   |   '   |
-// | SHIFT |  Z  |  X  |  C   |  V   |  B   |  CAPS  |  |  GUI  |  N   |  M    |  ,    |  .   |   /   | SHIFT |
+// | SHIFT |  Z  |  X  |  C   |  V   |  B   |  CAPS  |  |  GUI  |  N   |  M    |  ,    |  .   |   /   |   `   |
 //                     | GUI  |  ALT | LOWER|  SPACE |  | SPACE | RAISE|   `   | ENTER |
             display-name = "Base";
             bindings = <
