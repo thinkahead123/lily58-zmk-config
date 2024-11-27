@@ -18,15 +18,15 @@
 // |  ESC  |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   | BSPC  |
 // |  TAB  |  Q  |  W  |  E   |  R   |  T   |                   |  Y   |  U    |  I    |  O   |   P   |   -   |
 // |  CTRL |  A  |  S  |  D   |  F   |  G   |                   |  H   |  J    |  K    |  L   |   ;   |   '   |
-// | SHIFT |  Z  |  X  |  C   |  V   |  B   |  CAPS  |  |  "]"  |  N   |  M    |  ,    |  .   |   /   | SHIFT |
-//                     | GUI  |  ALT | LOWER|  SPACE |  | ENTER | RAISE|   `   | GUI   |
+// | SHIFT |  Z  |  X  |  C   |  V   |  B   |  CAPS  |  |  GUI  |  N   |  M    |  ,    |  .   |   /   | SHIFT |
+//                     | GUI  |  ALT | LOWER|  SPACE |  | SPACE | RAISE|   `   | ENTER |
             display-name = "Base";
             bindings = <
 &kp ESC   &kp N1 &kp N2 &kp N3   &kp N4   &kp N5                     &kp N6 &kp N7   &kp N8    &kp N9  &kp N0   &kp BSPC
 &kp TAB   &kp Q  &kp W  &kp E    &kp R    &kp T                      &kp Y  &kp U    &kp I     &kp O   &kp P    &kp MINUS
 &kp LCTRL &kp A  &kp S  &kp D    &kp F    &kp G                      &kp H  &kp J    &kp K     &kp L   &kp SEMI &kp SQT
-&kp LSHFT &kp Z  &kp X  &kp C    &kp V    &kp B  &kp CAPS   &kp RBKT &kp N  &kp M    &kp COMMA &kp DOT &kp FSLH &kp RSHFT
-                        &kp LGUI &kp LALT &mo 1  &kp SPACE  &kp RET  &mo 2  &kp GRAVE &kp RGUI
+&kp LALT &kp Z  &kp X  &kp C    &kp V    &kp B  &kp CAPS   &kp RGUI  &kp N  &kp M    &kp COMMA &kp DOT &kp FSLH &kp GRAVE
+                      &kp LGUI &kp LSHFT &mo 1  &kp SPACE  &kp SPACE &mo 2  &kp RSHFT &kp RET 
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
