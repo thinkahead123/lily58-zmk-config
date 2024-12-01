@@ -68,8 +68,6 @@
 &kp F7     &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &trans    &trans  &kp MINUS  &kp PLUS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp EQUAL  &kp BSLH
                            &trans   &trans   &trans   &trans    &trans  &trans     &trans    &trans
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
     };
 };
