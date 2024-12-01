@@ -28,8 +28,6 @@
 &kp LEFT_SHIFT  &kp Z   &kp X   &kp C     &kp V             &kp B      &kp LEFT_ALT    &kp LG(LC(A))  &kp N      &kp M       &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
                                 &kp LGUI  &kp LEFT_CONTROL  &kp SPACE  &mo 1           &mo 2          &kp SPACE  &kp RETURN  &kp GRAVE
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         lower_layer {
@@ -48,8 +46,6 @@
 &trans      &trans        &trans        &trans        &trans        &trans        &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp MINUS  &kp KP_PLUS  &kp LBRC         &kp RBRC  &kp KP_EQUAL  &kp PIPE
                                         &trans        &trans        &trans        &trans              &trans             &trans     &trans       &trans
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         raise_layer {
