@@ -26,7 +26,7 @@
 &kp TAB         &kp Q   &kp W   &kp E     &kp R             &kp T                                     &kp Y      &kp U       &kp I      &kp O    &kp P     &kp MINUS
 &kp CAPS        &kp A   &kp S   &kp D     &kp F             &kp G                                     &kp H      &kp J       &kp K      &kp L    &kp SEMI  &kp ENTER
 &kp LEFT_SHIFT  &kp Z   &kp X   &kp C     &kp V             &kp B      &kp LEFT_ALT    &kp LG(LC(A))  &kp N      &kp M       &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
-                                &kp LGUI  &kp LEFT_CONTROL  &kp SPACE  &mo 1           &mo 2          &kp SPACE  &kp RETURN  &kp GRAVE
+                                &kp LGUI  &kp LEFT_CONTROL  &kp SPACE  &mo 1           &mo 2          &kp SPACE  &kp RETURN  &kp SQT
             >;
         };
 
@@ -40,11 +40,11 @@
 
             display-name = "Lower";
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                                         &trans     &trans       &trans           &trans    &trans        &trans
-&kp F1      &kp F2        &kp F3        &kp F4        &kp F5        &kp F6                                               &kp F7     &kp F8       &kp F9           &kp F10   &kp F11       &kp F12
-&kp GRAVE   &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR    &kp PRCNT                                            &kp CARET  &kp AMPS     &kp KP_MULTIPLY  &kp LPAR  &kp RPAR      &kp TILDE
-&trans      &trans        &trans        &trans        &trans        &trans        &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp MINUS  &kp KP_PLUS  &kp LBRC         &kp RBRC  &kp KP_EQUAL  &kp PIPE
-                                        &trans        &trans        &trans        &trans              &trans             &trans     &trans       &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                                         &trans     &trans                &trans           &trans          &trans        &trans
+&kp F1      &kp F2        &kp F3        &kp F4        &kp F5        &kp F6                                               &kp SQT    &kp NON_US_BACKSLASH  &kp SLASH        &kp UNDERSCORE  &kp SQT       &kp DOUBLE_QUOTES
+&kp GRAVE   &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR    &kp PRCNT                                            &kp CARET  &kp AMPS              &kp KP_MULTIPLY  &kp LPAR        &kp RPAR      &kp TILDE
+&trans      &trans        &trans        &trans        &trans        &trans        &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp MINUS  &kp KP_PLUS           &kp LBRC         &kp RBRC        &kp KP_EQUAL  &kp PIPE
+                                        &trans        &trans        &trans        &trans              &trans             &trans     &trans                &trans
             >;
         };
 
