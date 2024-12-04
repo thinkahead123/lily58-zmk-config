@@ -40,11 +40,11 @@
 
             display-name = "Lower";
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2           &bt BT_SEL 3          &bt BT_SEL 4                                        &trans     &trans                &trans           &trans          &trans        &trans
-&kp EQUAL   &kp TILDE      &kp AMPERSAND  &kp PIPE               &kp UNDERSCORE        &kp CARET                                           &kp SQT    &kp NON_US_BACKSLASH  &kp SLASH        &kp UNDERSCORE  &kp SQT       &kp DOUBLE_QUOTES
-&kp MINUS   &kp BACKSLASH  &kp SQT        &kp LEFT_PARENTHESIS   &kp LA(LEFT_BRACKET)  &kp LEFT_BRACE                                      &kp CARET  &kp AMPS              &kp KP_MULTIPLY  &kp LPAR        &kp RPAR      &kp TILDE
-&kp PLUS    &kp SLASH      &kp GRAVE      &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET     &kp RIGHT_BRACE  &kp LESS_THAN    &kp GREATER_THAN  &kp MINUS  &kp KP_PLUS           &kp LBRC         &kp RBRC        &kp KP_EQUAL  &kp PIPE
-                                          &trans                 &trans                &trans           &trans           &trans            &trans     &trans                &trans
+&bt BT_CLR  &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2           &bt BT_SEL 3          &bt BT_SEL 4                                        &kp PLUS      &kp BACKSLASH   &kp PIPE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE
+&kp EQUAL   &kp TILDE      &kp AMPERSAND  &kp PIPE               &kp UNDERSCORE        &kp CARET                                           &kp MINUS     &kp UNDERSCORE  &kp SLASH      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp UNDERSCORE
+&kp MINUS   &kp BACKSLASH  &kp SQT        &kp LEFT_PARENTHESIS   &kp LA(LEFT_BRACKET)  &kp LEFT_BRACE                                      &kp ASTERISK  &kp AMPS        &kp PIPE       &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SQT
+&kp PLUS    &kp SLASH      &kp GRAVE      &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET     &kp RIGHT_BRACE  &kp LESS_THAN    &kp GREATER_THAN  &kp SLASH     &kp EQUAL       &kp LESS_THAN  &kp GREATER_THAN      &kp KP_EQUAL           &kp DOUBLE_QUOTES
+                                          &trans                 &trans                &trans           &trans           &trans            &trans        &trans          &trans
             >;
         };
 
