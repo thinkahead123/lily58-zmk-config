@@ -18,3 +18,14 @@ include:
   - board: nice_nano_v2
     shield: lily58_right nice_view_adapter nice_view
 
+  ## lily58 left firmware (generic oled)
+  - board: nice_nano_v2
+    shield: lily58_left
+
+  ## lily58 right firmware (generic oled)
+  - board: nice_nano_v2
+    shield: lily58_right
+
+  ## reset firmware
+  - board: nice_nano_v2
+    shield: settings_reset
