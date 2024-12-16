@@ -6,8 +6,8 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/ext_power.h>
+#include <dt-bindings/zmk/keys.h>
 
 / {
     behaviors {
@@ -55,11 +55,11 @@
 
             display-name = "Lower";
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0          &bt BT_SEL 1          &bt BT_SEL 2  &bt BT_SEL 3   &bt BT_SEL 4                                      &kp PLUS      &kp EQUAL       &kp CARET      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE
-&kp EQUAL   &kp TILDE             &kp PAGE_UP           &kp UP_ARROW  &kp PAGE_DOWN  &kp LG(MINUS)                                     &kp MINUS     &kp UNDERSCORE  &kp TILDE      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp UNDERSCORE
-&kp MINUS   &kp BACKSLASH         &kp LEFT              &kp DOWN      &kp RIGHT      &kp LG(PLUS)                                      &kp ASTERISK  &kp AMPS        &kp PIPE       &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SQT
-&kp PLUS    &kp C_BRIGHTNESS_INC  &kp C_BRIGHTNESS_DEC  &trans        &kp F11        &kp F12        &kp LESS_THAN    &kp GREATER_THAN  &kp SLASH     &kp BACKSLASH   &kp LESS_THAN  &kp GREATER_THAN      &kp QUESTION           &kp DOUBLE_QUOTES
-                                                        &trans        &trans         &trans         &trans           &trans            &trans        &trans          &trans
+&bt BT_CLR  &bt BT_SEL 0          &bt BT_SEL 1          &bt BT_SEL 2       &bt BT_SEL 3   &bt BT_SEL 4                                      &kp PLUS      &kp EQUAL       &kp CARET      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE
+&kp EQUAL   &kp TILDE             &kp PAGE_UP           &kp UP_ARROW       &kp PAGE_DOWN  &kp LG(MINUS)                                     &kp MINUS     &kp UNDERSCORE  &kp TILDE      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp UNDERSCORE
+&kp MINUS   &kp BACKSLASH         &kp LEFT              &kp DOWN           &kp RIGHT      &kp LG(PLUS)                                      &kp ASTERISK  &kp AMPS        &kp PIPE       &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SQT
+&kp PLUS    &kp C_BRIGHTNESS_INC  &kp C_BRIGHTNESS_DEC  &trans             &kp F11        &kp F12        &kp LESS_THAN    &kp GREATER_THAN  &kp SLASH     &kp BACKSLASH   &kp LESS_THAN  &kp GREATER_THAN      &kp QUESTION           &kp DOUBLE_QUOTES
+                                                        &ext_power EP_OFF  &trans         &trans         &trans           &trans            &trans        &trans          &trans
             >;
         };
 
