@@ -84,11 +84,11 @@
 
             display-name = "Raise";
             bindings = <
-&trans     &trans     &trans          &mkp MCLK       &trans          &trans                           &kp C_PREV     &kp C_PLAY_PAUSE  &kp C_NEXT        &trans             &kp C_SLEEP  &kp C_POWER
-&kp GRAVE  &kp LG(W)  &mkp LCLK       &mmv MOVE_UP    &mkp RCLK       &kp LG(MINUS)                    &kp PAGE_UP    &kp PAGE_DOWN     &kp LG(MINUS)     &kp LG(PLUS)       &kp N0       &kp PAGE_UP
-&kp F1     &kp LG(T)  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_DOWN  &kp LG(PLUS)                     &kp LEFT       &kp DOWN          &kp UP_ARROW      &kp RIGHT          &kp PAGE_UP  &kp PAGE_DOWN
-&kp F7     &kp F8     &kp F9          &kp F10         &kp F11         &kp F12        &trans    &trans  &kp MINUS      &kp PLUS          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp EQUAL    &kp BSLH
-                                      &trans          &trans          &trans         &trans    &trans  &kp LG(MINUS)  &kp LG(PLUS)      &trans
+&trans     &trans     &trans          &mkp MCLK       &trans           &trans                           &kp C_PREV     &kp C_PLAY_PAUSE  &kp C_NEXT        &trans             &kp C_SLEEP  &kp C_POWER
+&kp GRAVE  &kp LG(W)  &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &kp LG(MINUS)                    &kp PAGE_UP    &kp PAGE_DOWN     &kp LG(MINUS)     &kp LG(PLUS)       &kp N0       &kp PAGE_UP
+&kp F1     &kp LG(T)  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp LG(PLUS)                     &kp LEFT       &kp DOWN          &kp UP_ARROW      &kp RIGHT          &kp PAGE_UP  &kp PAGE_DOWN
+&kp F7     &kp F8     &kp F9          &kp F10         &kp F11          &kp F12        &trans    &trans  &kp MINUS      &kp PLUS          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp EQUAL    &kp BSLH
+                                      &trans          &trans           &trans         &trans    &trans  &kp LG(MINUS)  &kp LG(PLUS)      &trans
             >;
         };
 
