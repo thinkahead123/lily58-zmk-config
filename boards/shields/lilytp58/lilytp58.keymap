@@ -44,17 +44,19 @@
 //
 // This prevents build errors when we build the firmware
 // without the mouse keys PR or the TP module.
+/*
 #ifdef HAS_MOUSE_KEYS
   #define U_THUMB_INNER &mo MOUSE_KEYS
 #else
   #define U_THUMB_INNER &none
-#endif  // HAS_MOUSE_KEYS
+#endif
 
 #ifdef HAS_MOUSE_TP
   #define U_TOG_TP_SET &tog MOUSE_TP_SET
 #else
   #define U_TOG_TP_SET &none
-#endif  // HAS_MOUSE_TP
+#endif
+*/
 
 / {
     keymap {
