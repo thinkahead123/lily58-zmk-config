@@ -52,7 +52,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "LEFTCLICK";
             #binding-cells = <0>;
-            bindings = <&kp SPACE>, <&mkp LCLK>;
+            bindings = <&hm LC(SPACE) SPACE>, <&mkp LCLK>;
         };
     };
 
