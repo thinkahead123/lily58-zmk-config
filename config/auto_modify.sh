@@ -27,15 +27,21 @@ while true; do
     if [ "$LOCAL_COMMIT" != "$REMOTE_COMMIT" ]; then
         echo "检测到远程仓库有更新，正在同步..."
 
+        # 贮藏本地更改
+        git stash
+
         # 拉取最新代码
         git pull "$REMOTE" "$BRANCH"
 
+        # 恢复贮藏的更改
+        git stash pop
+
         # 修改文件，删除所有包含指定字符串的行
-        sed -i "/$STRING_TO_REMOVE/d" "$TARGET_FILE"
+        sed -i '' "/$STRING_TO_REMOVE/d" "$TARGET_FILE"
 
         # 提交更改
         git add "$TARGET_FILE"
-        git commit -m "自动删除包含 '$STRING_TO_REMOVE' 的行"
+        git commit -m "auto delete '$STRING_TO_REMOVE' lines"
 
         # 推送到远程仓库
         git push "$REMOTE" "$BRANCH"
