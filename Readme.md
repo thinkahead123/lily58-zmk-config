@@ -57,7 +57,7 @@
 		9:|
 		10:|
 		
-		注意表格中的promicro引脚编号的顺序并非物理编号，参考[连线图](https://github.com/thinkahead123/lily58-zmk-config/blob/main/refers/link-trackpoint.png)。
+		注意表格中的promicro引脚编号的顺序并非物理编号，参考![连线图](https://github.com/thinkahead123/lily58-zmk-config/blob/main/refers/link-trackpoint.png)。
 		
 
   
