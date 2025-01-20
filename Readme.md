@@ -24,7 +24,7 @@
 
 ## 修改方式
 
-## 修改方式(未完成)
+## 修改方式
 
 1. 改造成为无线。
    相对来说比较简单，主要涉及到
@@ -40,8 +40,26 @@
     * 修改zmk配置文件
 
 3. 增加红点鼠标。
-    难度较大，涉及到硬件焊接，固件编译。
-  * (todo)
+   难度较大，涉及到硬件焊接，固件编译。
+     * 必须仔细阅读[kim的文档](https://github.com/infused-kim/kb_zmk_ps2_mouse_trackpoint_driver?tab=readme-ov-file#12-automatic-layer-toggling-on-mouse-movement)，了解核心原理和过程。
+   * 焊接连线，5根线，分别从指点杆附带的排线中引出(||1:Data||2:Reset||6:CLK||7:GND||8:VCC||)，接入芯片的引脚之上，关键，在Lily58上，分别是
+         ||1:Data||2:Reset||6:CLK||7:GND||8:VCC||
+         
+		指点杆排线  | promicro芯片引脚
+		------------- | -------------
+		1:Data  | D0
+		2:Reset  | D4
+		3:|
+		4:|
+		5:|
+		6:CLK| D1
+		7:GND| GND
+		8:VCC| VCC
+		9:|
+		10:|
+		
+		注意表格中的promicro引脚编号的顺序并非物理编号，参考图。
+		
 
   
 
@@ -54,7 +72,7 @@
 
 ### 增加trackpoint：
 
-1. https://github.com/infused-kim/kb_zmk_ps2_mouse_trackpoint_driver?tab=readme-ov-file#12-automatic-layer-toggling-on-mouse-movement  核心原理
+1. https://github.com/infused-kim/kb_zmk_ps2_mouse_trackpoint_driver?tab=readme-ov-file#12-automatic-layer-toggling-on-mouse-movement  核心原理和过程
 
 2. https://github.com/infused-kim/kb_zmk_ps2_mouse_trackpoint_driver-zmk_config/tree/main  zmk-config配置文件示例
 
