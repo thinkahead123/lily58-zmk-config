@@ -8,20 +8,19 @@
   
 ## 升级条目
 
-1. 改造成为无线。main分支
+1. 改造成为无线。[main分支](https://github.com/thinkahead123/lily58-zmk-config/tree/main)
 
-2. 增加小屏幕view。main分支
+2. 增加小屏幕view。[addview分支](https://github.com/thinkahead123/lily58-zmk-config/tree/addview)
 
-3. 增加红点鼠标。trackpoint分支
-
+3. 增加红点鼠标。[trackpoint分支](https://github.com/thinkahead123/lily58-zmk-config/tree/trackpoint)
 
 ## 修改方式
 
-1. 改造成为无线。main分支
+1. 改造成为无线。[main分支](https://github.com/thinkahead123/lily58-zmk-config/tree/main)
 
-2. 增加小屏幕view。main分支
+2. 增加小屏幕view。[addview分支](https://github.com/thinkahead123/lily58-zmk-config/tree/addview)
 
-3. 增加红点鼠标。trackpoint分支
+3. 增加红点鼠标。[trackpoint分支](https://github.com/thinkahead123/lily58-zmk-config/tree/trackpoint)
 
   
 
