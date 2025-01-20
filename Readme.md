@@ -18,13 +18,14 @@
 
 3. 增加红点鼠标。[trackpoint分支](https://github.com/thinkahead123/lily58-zmk-config/tree/trackpoint)
 
-## 修改方式
+## 修改方式(未完成)
 
-1. 改造成为无线。[main分支](https://github.com/thinkahead123/lily58-zmk-config/tree/main)
+1. 改造成为无线。
+   相对来说比较简单，主要涉及到使用带蓝牙的nice!nano的替代品nrf
 
-2. 增加小屏幕view。[addview分支](https://github.com/thinkahead123/lily58-zmk-config/tree/addview)
+2. 增加小屏幕view。
 
-3. 增加红点鼠标。[trackpoint分支](https://github.com/thinkahead123/lily58-zmk-config/tree/trackpoint)
+3. 增加红点鼠标。
 
   
 
