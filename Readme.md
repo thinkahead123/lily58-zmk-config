@@ -77,8 +77,8 @@
 		
   3.3. 指点杆安装。
   		利用Lily58Pro的螺丝孔安装；
-  		添加延长杆，见链接；
-  		修改外壳模型，以放置电池和指点杆的芯片部分，提供安装指点杆的位置，如图；
+  		添加延长杆，[见链接](https://github.com/thinkahead123/lily58-zmk-config/tree/trackpoint/3dmodel)；
+  		修改[外壳模型](https://github.com/thinkahead123/lily58-zmk-config/tree/trackpoint/3dmodel)，以放置电池和指点杆的芯片部分，提供安装指点杆的位置，![如图](https://github.com/thinkahead123/lily58-zmk-config/blob/main/refers/installtp1.png)；
   		加大盖板的孔的尺寸以允许延长杆通过；
   		修剪4个键帽以允许指点的放置。
   		
