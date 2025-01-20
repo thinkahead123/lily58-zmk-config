@@ -9,6 +9,10 @@
 
 该键盘开源，并且[经典版本Pro](https://github.com/kata0510/Lily58/tree/master/Pro/PCB)提供了pcb可逆设计，同时支持普通轴MX，矮轴CHOC。
 
+## 背景
+面向有一定基础，比如：
+	能够焊接/修改配置/简单查看电路图等。
+	已经具有制作lily58键盘的经验。
   
 ## 升级条目
 
@@ -18,14 +22,43 @@
 
 3. 增加红点鼠标。[trackpoint分支](https://github.com/thinkahead123/lily58-zmk-config/tree/trackpoint)
 
-## 修改方式(未完成)
+## 修改方式
+
+## 修改方式
 
 1. 改造成为无线。
-   相对来说比较简单，主要涉及到使用带蓝牙的nice!nano的替代品nrf
+   相对来说比较简单，主要涉及到
+     * 使用带蓝牙的nice!nano的替代品(淘宝搜索: Promicro NRF52840开发板)
+     * 电池需要焊接到B+/RAW和B-/GND，如果你不清楚什么意思，查看相关芯片手册。
+     实际使用感受，因为zmk基于嵌入式系统zephyr，实测能耗极低，蓝牙开关用处不大。
+     除此之外，网上有[电池背包](https://github.com/hazels-garage/battpack)的方案，看上去不错。我没有实验过。
+     * 由于本人使用了ps/2的电池，故修改外壳3d模型，以放下电池。
 
-2. 增加小屏幕view。
+2. 增加小屏幕。
+    * 购买oled屏
+    * 焊接排针和对应的跳线
+    * 修改zmk配置文件
 
 3. 增加红点鼠标。
+   难度较大，涉及到硬件焊接，固件编译。
+     * 必须仔细阅读[kim的文档](https://github.com/infused-kim/kb_zmk_ps2_mouse_trackpoint_driver?tab=readme-ov-file#12-automatic-layer-toggling-on-mouse-movement)，了解核心原理和过程。
+   * 焊接连线，5根线，分别从指点杆附带的排线中引出(||1:Data||2:Reset||6:CLK||7:GND||8:VCC||)，接入芯片的引脚之上，关键，在Lily58上对应
+         
+		指点杆排线  | promicro芯片引脚
+		------------- | -------------
+		1:Data  | D0
+		2:Reset  | D4
+		3:|
+		4:|
+		5:|
+		6:CLK| D1
+		7:GND| GND
+		8:VCC| VCC
+		9:|
+		10:|
+		
+		注意表格中的promicro引脚编号的顺序并非物理编号，参考[连线图](https://github.com/thinkahead123/lily58-zmk-config/blob/main/refers/link-trackpoint.png)。
+		
 
   
 
@@ -38,7 +71,7 @@
 
 ### 增加trackpoint：
 
-1. https://github.com/infused-kim/kb_zmk_ps2_mouse_trackpoint_driver?tab=readme-ov-file#12-automatic-layer-toggling-on-mouse-movement  核心原理
+1. https://github.com/infused-kim/kb_zmk_ps2_mouse_trackpoint_driver?tab=readme-ov-file#12-automatic-layer-toggling-on-mouse-movement  核心原理和过程
 
 2. https://github.com/infused-kim/kb_zmk_ps2_mouse_trackpoint_driver-zmk_config/tree/main  zmk-config配置文件示例
 
