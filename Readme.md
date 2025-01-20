@@ -42,8 +42,7 @@
 3. 增加红点鼠标。
    难度较大，涉及到硬件焊接，固件编译。
      * 必须仔细阅读[kim的文档](https://github.com/infused-kim/kb_zmk_ps2_mouse_trackpoint_driver?tab=readme-ov-file#12-automatic-layer-toggling-on-mouse-movement)，了解核心原理和过程。
-   * 焊接连线，5根线，分别从指点杆附带的排线中引出(||1:Data||2:Reset||6:CLK||7:GND||8:VCC||)，接入芯片的引脚之上，关键，在Lily58上，分别是
-         ||1:Data||2:Reset||6:CLK||7:GND||8:VCC||
+   * 焊接连线，5根线，分别从指点杆附带的排线中引出(||1:Data||2:Reset||6:CLK||7:GND||8:VCC||)，接入芯片的引脚之上，关键，在Lily58上对应
          
 		指点杆排线  | promicro芯片引脚
 		------------- | -------------
