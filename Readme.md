@@ -85,7 +85,10 @@
   
   3.4. 固件的编译。  [trackpoint分支](https://github.com/thinkahead123/lily58-zmk-config/tree/trackpoint)
   
-首先，还是致敬kim提供了如此优秀的固件源代码。  
+首先，还是致敬**kim**提供了如此优秀的固件源代码。
+
+> 请使用编译好的，**"lilytp58_right-nice\_nano\_v2-scl\_D1\_sda_D0-zmk.uf2"**，这个版本更新右手键盘固件。
+
 	
 	刚开始编译最大的麻烦，在于起初，使用键盘默认的名字，Lily58，由于zmk会根据这个名字去搜索默认配置，导致很多我们提供的修改配置无法生效。后来改成了Lilytp58之后，问题得到解决。    
 
@@ -98,7 +101,7 @@
 		#include <dt-bindings/zmk/pointing.h>
 		
 	
-	这行会导致固件的在线编译（actkons）失败。 需要手动去掉这行，
+	这行会导致固件的在线编译（actions）失败。 需要手动去掉这行，
 	再次提交才能编译通过。
 	** 提供了一个脚本完成自动监测远程更新，自动删除pointing这行代码，
 	并自动推送的脚本文件auto_modify.sh，请在理解之后让它为你完成自动修改和推送**。
