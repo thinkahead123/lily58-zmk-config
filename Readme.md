@@ -71,9 +71,9 @@
 		8:VCC| VCC
 		9:|
 		10:|
-		
-		注意表格中的promicro引脚编号的顺序并非物理编号，参考![连线图](https://github.com/thinkahead123/lily58-zmk-config/blob/main/refers/link-trackpoint.png)。
-		硬件连接，![连接图](https://github.com/thinkahead123/lily58-zmk-config/blob/main/refers/board-link-tp.png)
+	
+注意表格中的promicro引脚编号的顺序并非物理编号，参考![连线图](https://github.com/thinkahead123/lily58-zmk-config/blob/main/refers/link-trackpoint.png)。
+硬件连接，![连接图](https://github.com/thinkahead123/lily58-zmk-config/blob/main/refers/board-link-tp.png)
 		
   3.3. 指点杆安装。
   		利用Lily58Pro的螺丝孔安装；
@@ -83,19 +83,24 @@
   		修剪4个键帽以允许指点的放置。
   		
   
-  3.4. 固件的编译。  
+  3.4. 固件的编译。  [trackpoint分支](https://github.com/thinkahead123/lily58-zmk-config/tree/trackpoint)
+  
 首先，还是致敬kim提供了如此优秀的固件源代码。  
 	
-存在一些问题。  
-最大的麻烦，在于起初，我没有修改键盘的名字，Lily58，导致很多配置无法生效。后来改成了Lilytp58之后，问题得到解决。  
+	刚开始编译最大的麻烦，在于起初，使用键盘默认的名字，Lily58，由于zmk会根据这个名字去搜索默认配置，导致很多我们提供的修改配置无法生效。后来改成了Lilytp58之后，问题得到解决。    
+
 不如预期的地方在于，使用固件源代码，无法实现跟zmk主版本的功能进行升级。这导致pointing功能和studio功能缺失。
-pointing功能的缺失，使得我们无法使用鼠标按键模拟的一些功能。我们使用[在线配置工具](https://nickcoutsos.github.io/keymap-editor/)，它自动会为我们的keymap配置文件添加一行:
 
-	#include <dt-bindings/zmk/pointing.h>
+	问题一：pointing功能的缺失，使得我们无法使用鼠标按键模拟的一些功能。我们使用[在线配置工具](https://nickcoutsos.github.io/keymap-editor/)，它自动会为我们的keymap配置文件添加一行:
 	
+		#include <dt-bindings/zmk/pointing.h>
+		
+	
+	这行会导致固件的在线编译（actkons）失败。 需要手动去掉这行，再次提交才能编译通过。
+	** 提供了一个脚本完成自动监测远程更新，自动删除pointing这行代码，并自动推送的脚本文件auto_modify.sh，请在理解之后让它为你完成自动修改和推送**。
+	
+	问题二：studio功能的缺失，导致无法使用zmk studio的快速的键值修改能力。
 
-这行会导致固件的在线编译（actkons）失败。 需要手动去掉这行，再次提交才能编译通过。
-我提供了一个脚本完成自动监测
 
 	
   
