@@ -91,13 +91,17 @@
 
 不如预期的地方在于，使用固件源代码，无法实现跟zmk主版本的功能进行升级。这导致pointing功能和studio功能缺失。
 
-	问题一：pointing功能的缺失，使得我们无法使用鼠标按键模拟的一些功能。我们使用[在线配置工具](https://nickcoutsos.github.io/keymap-editor/)，它自动会为我们的keymap配置文件添加一行:
+	问题一：pointing功能的缺失，使得我们无法使用鼠标按键模拟的一些功能。
+	我们使用[在线配置工具](https://nickcoutsos.github.io/keymap-editor/)，
+	它自动会为我们的keymap配置文件添加一行:
 	
 		#include <dt-bindings/zmk/pointing.h>
 		
 	
-	这行会导致固件的在线编译（actkons）失败。 需要手动去掉这行，再次提交才能编译通过。
-	** 提供了一个脚本完成自动监测远程更新，自动删除pointing这行代码，并自动推送的脚本文件auto_modify.sh，请在理解之后让它为你完成自动修改和推送**。
+	这行会导致固件的在线编译（actkons）失败。 需要手动去掉这行，
+	再次提交才能编译通过。
+	** 提供了一个脚本完成自动监测远程更新，自动删除pointing这行代码，
+	并自动推送的脚本文件auto_modify.sh，请在理解之后让它为你完成自动修改和推送**。
 	
 	问题二：studio功能的缺失，导致无法使用zmk studio的快速的键值修改能力。
 
