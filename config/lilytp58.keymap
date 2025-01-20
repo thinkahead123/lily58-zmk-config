@@ -32,6 +32,8 @@
 #include "include/mouse_tp.dtsi"
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
 
 / {
     behaviors {
@@ -80,7 +82,7 @@
             //                     |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &kp F2  &kp LS(EXCL)  &kp LS(AT)  &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)  &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)  &kp LS(LPAR)  &kp LS(RPAR)  &kp F6  &kp F3  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &kp F7  &kp F4  &kp GRAVE  &kp LS(TILDE)  &kp MINUS  &kp LS(UNDER)  &kp LBKT  &trans  &trans  &kp RBKT  &kp LS(PLUS)  &kp EQUAL  &kp SQT  &kp LS(DQT)  &kp F8  &trans  &trans  &trans  &kp RET  &kp LS(PIPE)  &kp BSLH  &kp FSLH  &kp LS(QMARK)
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &trans  &kp LS(EXCL)  &kp LS(AT)  &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)  &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)  &kp LS(LPAR)  &kp LS(RPAR)  &trans  &trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &trans  &trans  &kp GRAVE  &kp LS(TILDE)  &kp MINUS  &kp LS(UNDER)  &kp LBKT  &trans  &trans  &kp RBKT  &kp LS(PLUS)  &kp EQUAL  &kp SQT  &kp LS(DQT)  &trans  &trans  &trans  &trans  &kp RET  &kp LS(PIPE)  &kp BSLH  &kp FSLH  &kp LS(QMARK)
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
