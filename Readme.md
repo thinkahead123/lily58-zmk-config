@@ -24,25 +24,40 @@
 
 ## 修改方式
 
-## 修改方式
 
-1. 改造成为无线。
-   相对来说比较简单，主要涉及到
-     * 使用带蓝牙的nice!nano的替代品(淘宝搜索: Promicro NRF52840开发板)
-     * 电池需要焊接到B+/RAW和B-/GND，如果你不清楚什么意思，查看相关芯片手册。
-     实际使用感受，因为zmk基于嵌入式系统zephyr，实测能耗极低，蓝牙开关用处不大。
-     除此之外，网上有[电池背包](https://github.com/hazels-garage/battpack)的方案，看上去不错。我没有实验过。
-     * 由于本人使用了ps/2的电池，故修改外壳3d模型，以放下电池。
+### === 1. 改造成为无线。===  
 
-2. 增加小屏幕。
-    * 购买oled屏
-    * 焊接排针和对应的跳线
-    * 修改zmk配置文件
+---
 
-3. 增加红点鼠标。
+
+ * 使用带蓝牙的nice!nano的替代品(淘宝搜索: Promicro NRF52840开发板)
+ * 电池需要焊接到B+/RAW和B-/GND，如果你不清楚什么意思，查看相关芯片手册。
+   实际使用感受，因为zmk基于嵌入式系统zephyr，实测能耗极低，蓝牙开关用处不大。
+   除此之外，网上有[电池背包](https://github.com/hazels-garage/battpack)的方案，看上去不错。我没有实验过。
+ * 由于本人使用了ps/2的电池，故修改外壳3d模型，以放下电池。
+
+
+### === 2. 增加小屏幕。===  
+
+---
+
+
+* 购买oled屏
+* 焊接排针和对应的跳线
+* 修改zmk配置文件
+
+### === 3. 增加红点鼠标。===  
+
+---
+
+
    难度较大，涉及到硬件焊接，固件编译。
-     * 必须仔细阅读[kim的文档](https://github.com/infused-kim/kb_zmk_ps2_mouse_trackpoint_driver?tab=readme-ov-file#12-automatic-layer-toggling-on-mouse-movement)，了解核心原理和过程。
-   * 焊接连线，5根线，分别从指点杆附带的排线中引出(||1:Data||2:Reset||6:CLK||7:GND||8:VCC||)，接入芯片的引脚之上，关键，在Lily58上对应
+   
+   3.1. 原理理解。
+   		必须仔细阅读[kim的文档](https://github.com/infused-kim/kb_zmk_ps2_mouse_trackpoint_driver?tab=readme-ov-file#12-automatic-layer-toggling-on-mouse-movement)，了解核心原理和过程。
+   		
+   3.2. 焊接连线。
+   		5根线，分别从指点杆附带的排线中引出(||1:Data||2:Reset||6:CLK||7:GND||8:VCC||)，接入芯片的引脚之上，关键，在Lily58上对应
          
 		指点杆排线  | promicro芯片引脚
 		------------- | -------------
@@ -58,8 +73,31 @@
 		10:|
 		
 		注意表格中的promicro引脚编号的顺序并非物理编号，参考![连线图](https://github.com/thinkahead123/lily58-zmk-config/blob/main/refers/link-trackpoint.png)。
+		硬件连接，![连接图](https://github.com/thinkahead123/lily58-zmk-config/blob/main/refers/board-link-tp.png)
 		
+  3.3. 指点杆安装。
+  		利用Lily58Pro的螺丝孔安装；
+  		添加延长杆，见链接；
+  		修改外壳模型，以放置电池和指点杆的芯片部分，提供安装指点杆的位置，如图；
+  		加大盖板的孔的尺寸以允许延长杆通过；
+  		修剪4个键帽以允许指点的放置。
+  		
+  
+  3.4. 固件的编译。  
+首先，还是致敬kim提供了如此优秀的固件源代码。  
+	
+存在一些问题。  
+最大的麻烦，在于起初，我没有修改键盘的名字，Lily58，导致很多配置无法生效。后来改成了Lilytp58之后，问题得到解决。  
+不如预期的地方在于，使用固件源代码，无法实现跟zmk主版本的功能进行升级。这导致pointing功能和studio功能缺失。
+pointing功能的缺失，使得我们无法使用鼠标按键模拟的一些功能。我们使用[在线配置工具](https://nickcoutsos.github.io/keymap-editor/)，它自动会为我们的keymap配置文件添加一行:
 
+	#include <dt-bindings/zmk/pointing.h>
+	
+
+这行会导致固件的在线编译（actkons）失败。 需要手动去掉这行，再次提交才能编译通过。
+我提供了一个脚本完成自动监测
+
+	
   
 
 ## 参考
