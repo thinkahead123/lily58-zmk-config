@@ -58,19 +58,19 @@
    		
    3.2. 焊接连线。
    		5根线，分别从指点杆附带的排线中引出(||1:Data||2:Reset||6:CLK||7:GND||8:VCC||)，接入芯片的引脚之上，关键，在Lily58上对应
-         
-		指点杆排线  | promicro芯片引脚
-		------------- | -------------
-		1:Data  | D0
-		2:Reset  | D4
-		3:|
-		4:|
-		5:|
-		6:CLK| D1
-		7:GND| GND
-		8:VCC| VCC
-		9:|
-		10:|
+     
+指点杆排线  | promicro芯片引脚
+------------- | -------------
+1:Data  | D0
+2:Reset  | D4
+3:|
+4:|
+5:|
+6:CLK| D1
+7:GND| GND
+8:VCC| VCC
+9:|
+10:|
 	
 注意表格中的promicro引脚编号的顺序并非物理编号，参考![连线图](https://github.com/thinkahead123/lily58-zmk-config/blob/main/refers/link-trackpoint.png)。
 硬件连接，![连接图](https://github.com/thinkahead123/lily58-zmk-config/blob/main/refers/board-link-tp.png)
