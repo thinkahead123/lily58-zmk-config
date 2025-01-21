@@ -53,18 +53,18 @@ This guide is aimed at those with some experience, such as:
    3.2. Soldering connections.
          Five wires need to be connected from the trackpoint's ribbon cable (||1:Data||2:Reset||6:CLK||7:GND||8:VCC||) to the chip pins. Key connections on the Lily58 are as follows:
          
-		Trackpoint Ribbon Cable  | Promicro Chip Pins
-		------------- | -------------
-		1:Data  | D0
-		2:Reset  | D4
-		3:|
-		4:|
-		5:|
-		6:CLK| D1
-		7:GND| GND
-		8:VCC| VCC
-		9:|
-		10:|
+Trackpoint Ribbon Cable  | Promicro Chip Pins
+------------- | -------------
+1:Data  | D0
+2:Reset  | D4
+3:|
+4:|
+5:|
+6:CLK| D1
+7:GND| GND
+8:VCC| VCC
+9:|
+10:|
 	
 Note that the pin numbering in the table is not the physical order. Refer to the ![connection diagram](https://github.com/thinkahead123/lily58-zmk-config/blob/main/refers/link-trackpoint.png).
 Hardware connection, ![connection diagram](https://github.com/thinkahead123/lily58-zmk-config/blob/main/refers/board-link-tp.png)
