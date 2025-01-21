@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 配置
-REPO_DIR="/Users/alex/Projects/KEYBOARD键盘/lily58-wireless-view-zmk-config/config"  # 本地仓库路径
+REPO_DIR="./"  # 本地仓库路径
 REMOTE="origin"                # 远程仓库名称
 BRANCH="trackpoint"                  # 分支名称
 TARGET_FILE="lilytp58.keymap"  # 需要修改的文件
