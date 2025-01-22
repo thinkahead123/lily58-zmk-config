@@ -50,7 +50,6 @@
 
 ---
 
-
    难度较大，涉及到硬件焊接，固件编译。
    
    3.1. 原理理解。
@@ -60,29 +59,26 @@
    		5根线，分别从指点杆附带的排线中引出，接入芯片的引脚之上，关键，在Lily58上对应
      硬件连接，![连接图](https://github.com/thinkahead123/lily58-zmk-config/blob/main/refers/board-link-tp.png)
 		
-  3.3. 指点杆安装。
-  		利用Lily58Pro的螺丝孔安装；
-  		添加延长杆；
-  		修改外壳模型，以放置电池和指点杆的芯片部分，提供安装指点杆的位置，![如图](https://github.com/thinkahead123/lily58-zmk-config/blob/main/refers/installtp1.png)；
-  		加大盖板的孔的尺寸以允许延长杆通过；
-  		修剪4个键帽以允许指点的放置。
-  		
-  
+  3.3. 指点杆安装。  
+  		利用Lily58Pro的螺丝孔安装；  
+  		添加延长杆；  
+  		修改外壳模型，以放置电池和指点杆的芯片部分，提供安装指点杆的位置，![如图](https://github.com/thinkahead123/lily58-zmk-config/blob/main/refers/installtp1.png)；  
+  		加大盖板的孔的尺寸以允许延长杆通过；  
+  		修剪4个键帽以允许指点的放置。  
+  		  
   3.4. 固件的编译。  [trackpoint分支](https://github.com/thinkahead123/lily58-zmk-config/tree/trackpoint)
   
 首先，还是致敬**kim**提供了如此优秀的固件源代码。
 	
-> 请使用编译好的，**"lilytp58_right-nice\_nano\_v2-scl\_D1\_sda_D0-zmk.uf2"**，这个版本更新右手键盘固件。
-
-	问题：我们使用[在线配置工具](https://nickcoutsos.github.io/keymap-editor/)，
-	它自动会为我们的keymap配置文件添加一行:	
+请使用编译好的，**"lilytp58_right-nice\_nano\_v2-scl\_D1\_sda_D0-zmk.uf2"**，这个版本更新右手键盘固件。
 	
-		#include <dt-bindings/zmk/pointing.h>
-			
-	这行会导致固件的在线编译（actions）失败。 需要手动去掉这行，
-	再次提交才能编译通过。
+问题：我们使用[在线配置工具](https://nickcoutsos.github.io/keymap-editor/)，
+它自动会为我们的keymap配置文件添加一行:	
 	
-	** 提供了一个脚本auto_modify.sh完成自动监测远程更新，自动删除pointing这行代码，并自动推送的脚本文件auto_modify.sh，请在理解之后让它为你完成自动修改和推送**。
+"#include \<dt-bindings/zmk/pointing.h\>"	
+这行会导致固件的在线编译（actions）失败。 需要手动去掉这行，再次提交才能编译通过。
+	
+** 提供了一个脚本auto_modify.sh完成自动监测远程更新，自动删除pointing这行代码，并自动推送的脚本文件auto_modify.sh，请在理解之后让它为你完成自动修改和推送**。
 	
 
 ## 参考
