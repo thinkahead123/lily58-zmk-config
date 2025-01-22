@@ -50,12 +50,12 @@ This guide is aimed at individuals with some experience, such as:
          Carefully read [Kim's documentation](https://github.com/infused-kim/kb_zmk_ps2_mouse_trackpoint_driver?tab=readme-ov-file#12-automatic-layer-toggling-on-mouse-movement) to grasp the core principles and process.
          
    3.2. Solder the connections.
-         Five wires need to be connected from the TrackPoint's ribbon cable to the chip's pins. Key connections on the Lily58 are shown in the [connection diagram](https://github.com/thinkahead123/lily58-zmk-config/blob/main/refers/board-link-tp.png).
+         Five wires need to be connected from the TrackPoint's ribbon cable to the chip's pins. Key connections on the Lily58 are shown in the ![connection diagram](https://github.com/thinkahead123/lily58-zmk-config/blob/main/refers/board-link-tp.png).
 		
    3.3. Install the TrackPoint.
          Use the Lily58Pro's screw holes for installation;
          Add an extension rod;
-         Modify the case model to accommodate the battery and the TrackPoint's chip, providing a mounting position for the TrackPoint, as shown in the [image](https://github.com/thinkahead123/lily58-zmk-config/blob/main/refers/installtp1.png);
+         Modify the case model to accommodate the battery and the TrackPoint's chip, providing a mounting position for the TrackPoint, as shown in the ![image](https://github.com/thinkahead123/lily58-zmk-config/blob/main/refers/installtp1.png);
          Enlarge the holes in the cover plate to allow the extension rod to pass through;
          Trim four keycaps to allow placement of the TrackPoint.
   		
