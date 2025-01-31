@@ -44,7 +44,7 @@ This guide is intended for users with some experience, such as:
      - Use the precompiled firmware **"lilytp58_right-nice_nano_v2-scl_D1_sda_D0-zmk.uf2"** to update the right-hand keyboard firmware.  
      - **Issue**: When using the [online configuration tool](https://nickcoutsos.github.io/keymap-editor/), it automatically adds the following line to the keymap configuration file:  
        ```c  
-       #include \<dt-bindings/zmk/pointing.h\>  
+       #include <dt-bindings/zmk/pointing.h>  
        ```  
        This line will cause the online compilation (actions) to fail. You need to manually remove it and resubmit for successful compilation.  
      - **Solution**: An automatic script `auto_modify.sh` is provided to monitor remote updates, remove the `pointing` line, and push the changes. Please understand the script before using it to automate modifications and push updates.  
