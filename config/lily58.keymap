@@ -82,8 +82,6 @@
 &kp GRAVE       &kp Z         &kp X           &kp C       &kp V        &kp B        &hm LA(LC(W)) LBKT    &hm LC(LG(A)) RIGHT_BRACKET  &kp N            &kp M        &kp COMMA   &kp DOT          &kp FSLH  &kp BACKSLASH
                                               &kp LCTRL   &kp LALT     &lt 1 TAB    &hm LGUI ENTER        &hm LC(SPACE) SPACE          &lt 2 BACKSPACE  &lt 3 EQUAL  &kp SQT
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         symbol {
