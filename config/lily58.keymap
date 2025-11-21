@@ -99,8 +99,6 @@
 &trans  &kp GRAVE     &kp LS(TILDE)  &kp MINUS      &kp LS(UNDER)  &kp LBKT       &trans     &trans        &kp RBKT       &kp LS(PLUS)  &kp EQUAL      &kp SQT       &kp LS(DQT)   &trans
                                      &trans         &trans         &trans         &kp RET    &kp LS(PIPE)  &kp BSLH       &kp FSLH      &kp LS(QMARK)
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         navi {
