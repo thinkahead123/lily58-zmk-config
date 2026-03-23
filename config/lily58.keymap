@@ -169,11 +169,3 @@
         };
     };
 };
-ans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
-            >;
-        };
-    };
-};
