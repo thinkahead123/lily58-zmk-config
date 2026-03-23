@@ -160,11 +160,11 @@
 
         game_layer {
             bindings = <
-&kp ESC     &kp N1  &kp N2  &kp N3     &kp N4    &kp N5                            &kp N6      &kp N7    &kp N8     &kp N9   &kp N0    &kp BACKSPACE
-&kp TAB     &kp Q   &kp W   &kp E      &kp R     &kp T                             &kp Y       &kp U     &kp I      &kp O    &kp P     &game_lock 0 MINUS
-&kp LSHIFT  &kp A   &kp S   &kp D      &kp F     &kp G                             &kp H       &kp J     &kp K      &kp L    &kp SEMI  &kp ENTER
-&kp GRAVE   &kp Z   &kp X   &kp C      &kp V     &kp B     &kp LBKT     &kp RBKT   &kp N       &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp BSLH
-                            &kp LCTRL  &kp LALT  &kp LGUI  &kp SPACE    &kp ENTER  &kp RSHIFT  &kp RALT  &kp RCTRL
+&kp ESC     &kp N1  &kp N2  &kp N3     &kp N4    &kp N5                           &kp N6         &kp N7     &kp N8            &kp N9   &kp N0    &kp BACKSPACE
+&kp TAB     &kp Q   &kp W   &kp E      &kp R     &kp T                            &kp Y          &kp U      &kp I             &kp O    &kp P     &game_lock 0 MINUS
+&kp LSHIFT  &kp A   &kp S   &kp D      &kp F     &kp G                            &kp H          &kp J      &kp K             &kp L    &kp SEMI  &kp ENTER
+&kp GRAVE   &kp Z   &kp X   &kp C      &kp V     &kp B    &kp LBKT     &kp RBKT   &kp N          &kp M      &kp COMMA         &kp DOT  &kp FSLH  &kp BSLH
+                            &kp LCTRL  &kp LALT  &kp TAB  &kp ENTER    &kp SPACE  &kp BACKSPACE  &kp EQUAL  &kp SINGLE_QUOTE
             >;
         };
     };
