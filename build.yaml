@@ -14,14 +14,14 @@
 ---
 include:
   ## lily58 left firmware (generic oled)
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
     shield: lily58_left
     snippet: studio-rpc-usb-uart
     
   ## lily58 right firmware (generic oled)
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
     shield: lily58_right
 
   ## reset firmware
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
     shield: settings_reset
