@@ -99,7 +99,7 @@
 &kp TAB         &hm ESCAPE Q  &kp W           &kp E       &kp R        &kp T                                                           &kp Y            &kp U               &kp I             &kp O            &kp P     &kp MINUS
 &kp LC(LSHIFT)  &kp A         &hm LEFT_ALT S  &hm LGUI D  &hm LSHFT F  &hm LCTRL G                                                     &hm RCTRL H      &hm RSHFT J         &hm RGUI K        &hm RIGHT_ALT L  &kp SEMI  &kp ENTER
 &kp GRAVE       &kp Z         &kp X           &kp C       &kp V        &kp B        &hm LA(LC(W)) LBKT    &hm LC(LG(A)) RIGHT_BRACKET  &kp N            &kp M               &kp COMMA         &kp DOT          &kp FSLH  &kp BACKSLASH
-                                              &kp LCTRL   &kp LALT     &lt 1 TAB    &kp LGUI              &kp SPACE                    &lt 2 BACKSPACE  &game_lock 0 EQUAL  &game_lock 5 SQT
+                                              &kp LCTRL   &kp LALT     &lt 1 TAB    &kp ENTER             &kp SPACE                    &lt 2 BACKSPACE  &game_lock 0 EQUAL  &game_lock 5 SQT
             >;
         };
 
