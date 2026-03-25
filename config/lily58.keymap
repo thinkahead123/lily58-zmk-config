@@ -119,11 +119,11 @@
 
         navi {
             bindings = <
-&trans     &trans         &trans         &trans         &trans         &trans                           &trans             &trans           &trans            &trans           &trans     &trans
-&kp GRAVE  &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4                     &kp PAGE_DOWN      &kp PAGE_UP      &kp LG(KP_MINUS)  &kp LG(KP_PLUS)  &kp N0     &trans
-&trans     &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4                    &kp LEFT           &kp DOWN         &kp UP_ARROW      &kp RIGHT        &kp RIGHT  &trans
-&trans     &bt BT_CLR     &trans         &trans         &trans         &trans         &trans    &trans  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp EQUAL         &kp LBKT         &kp RBKT   &kp BSLH
-                                         &trans         &trans         &trans         &trans    &trans  &trans             &trans           &trans
+&trans     &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_4  &kp KP_NUMBER_5                    &kp KP_NUMBER_6    &kp KP_NUMBER_7  &kp KP_NUMBER_8   &kp KP_NUMBER_9  &kp KP_NUMBER_0  &trans
+&kp GRAVE  &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4                       &kp PAGE_DOWN      &kp PAGE_UP      &kp LG(KP_MINUS)  &kp LG(KP_PLUS)  &kp N0           &trans
+&trans     &bt BT_DISC 0    &bt BT_DISC 1    &bt BT_DISC 2    &bt BT_DISC 3    &bt BT_DISC 4                      &kp LEFT           &kp DOWN         &kp UP_ARROW      &kp RIGHT        &kp RIGHT        &trans
+&trans     &bt BT_CLR       &trans           &trans           &trans           &trans           &trans    &trans  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp EQUAL         &kp LBKT         &kp RBKT         &kp BSLH
+                                             &trans           &trans           &trans           &trans    &trans  &trans             &trans           &trans
             >;
         };
 
