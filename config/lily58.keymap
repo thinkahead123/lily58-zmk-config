@@ -313,9 +313,9 @@
 
         /* ========== Layer 5 (game_layer): 主要游戏控制 ========== */
 
-        game_layer {
+        game_layer_5 {
             bindings = <
-&kp ESC     &kp N1  &kp N2  &kp N3     &kp N4    &kp N5                               &kp N6           &kp N7              &kp N8     &kp N9   &kp N0    &game_lock 0 BACKSPACE
+&kp ESC     &kp N1  &kp N2  &kp N3     &kp N4    &kp N5                               &kp N6           &kp N7              &kp N8     &kp N9   &kp N0    &kp BACKSPACE
 &kp TAB     &kp Q   &kp W   &kp E      &kp R     &kp T                                &kp Y            &kp U               &kp I      &kp O    &kp P     &kp MINUS
 &kp LSHIFT  &kp A   &kp S   &kp D      &kp F     &kp G                                &kp H            &kp J               &kp K      &kp L    &kp SEMI  &kp ENTER
 &kp GRAVE   &kp Z   &kp X   &kp C      &kp V     &kp B      &kp LBKT     &kp RBKT     &kp N            &kp M               &kp COMMA  &kp DOT  &kp FSLH  &kp BSLH
@@ -327,7 +327,7 @@
         /* 设计思路：布局结构与 game_layer 完全相同，方便肌肉记忆 */
         /* 右手区域映射左手常用键值，通过游戏内映射实现双手控制 */
 
-        ETS2 {
+        game_layer_6 {
             bindings = <
 &kp ESC     &kp N1  &kp N2  &kp N3     &kp N4    &kp N5                             &kp N1           &kp N2              &kp N3   &kp N4  &kp N5  &game_lock 0 BACKSPACE
 &kp TAB     &kp Q   &kp W   &kp E      &kp R     &kp T                              &kp Q            &kp W               &kp E    &kp R   &kp T   &kp MINUS
