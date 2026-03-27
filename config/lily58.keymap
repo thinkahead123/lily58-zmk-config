@@ -165,11 +165,11 @@
 
         ETS2 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
+&kp ESC     &kp N1  &kp N2  &kp N3     &kp N4    &kp N5                               &kp N1           &kp N2              &kp N3                     &kp N4   &kp N5    &game_lock 0 BACKSPACE
+&kp TAB     &kp Q   &kp W   &kp E      &kp R     &kp T                                &kp Q            &kp W               &kp E                      &kp R    &kp T     &kp MINUS
+&kp LSHIFT  &kp A   &kp S   &kp D      &kp F     &kp G                                &kp A            &kp S               &kp D                      &kp F    &kp G     &kp ENTER
+&kp GRAVE   &kp Z   &kp X   &kp C      &kp V     &kp B      &kp LBKT     &kp RBKT     &kp Z            &kp X               &kp C                      &kp V    &kp B     &kp BSLH
+                            &kp LCTRL  &kp LALT  &lt 1 TAB  &kp ENTER    &lt 6 SPACE  &lt 2 BACKSPACE  &game_lock 0 EQUAL  &kp SQT
             >;
         };
     };
