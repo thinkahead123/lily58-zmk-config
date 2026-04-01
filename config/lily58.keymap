@@ -155,21 +155,21 @@
 
         game_layer {
             bindings = <
-&kp ESC     &kp N1  &kp N2  &kp N3     &kp N4    &kp N5                               &kp N6           &kp N7              &kp N8                     &kp N9   &kp N0    &game_lock 0 BACKSPACE
-&kp TAB     &kp Q   &kp W   &kp E      &kp R     &kp T                                &kp Y            &kp U               &kp I                      &kp O    &kp P     &kp MINUS
-&kp LSHIFT  &kp A   &kp S   &kp D      &kp F     &kp G                                &kp H            &kp J               &kp K                      &kp L    &kp SEMI  &kp ENTER
-&kp GRAVE   &kp Z   &kp X   &kp C      &kp V     &kp B      &kp LBKT     &kp RBKT     &kp N            &kp M               &kp COMMA                  &kp DOT  &kp FSLH  &kp BSLH
-                            &kp LCTRL  &kp LALT  &lt 1 TAB  &kp ENTER    &lt 6 SPACE  &lt 2 BACKSPACE  &game_lock 0 EQUAL  &game_lock 5 SINGLE_QUOTE
+&kp ESC     &kp N1  &kp N2  &kp N3     &kp N4    &kp N5                                                                &kp N6           &kp N7              &kp N8                     &kp N9   &kp N0    &game_lock 0 BACKSPACE
+&kp TAB     &kp Q   &kp W   &kp E      &kp R     &kp T                                                                 &kp Y            &kp U               &kp I                      &kp O    &kp P     &kp MINUS
+&kp LSHIFT  &kp A   &kp S   &kp D      &kp F     &kp G                                                                 &kp H            &kp J               &kp K                      &kp L    &kp SEMI  &kp ENTER
+&kp GRAVE   &kp Z   &kp X   &kp C      &kp V     &kp B      &hm LG(TAB) LEFT_BRACKET    &hm PRINTSCREEN RIGHT_BRACKET  &kp N            &kp M               &kp COMMA                  &kp DOT  &kp FSLH  &kp BSLH
+                            &kp LCTRL  &kp LALT  &lt 1 TAB  &kp ENTER                   &lt 6 SPACE                    &lt 2 BACKSPACE  &game_lock 0 EQUAL  &game_lock 5 SINGLE_QUOTE
             >;
         };
 
         ETS2 {
             bindings = <
-&kp ESC     &kp N1  &kp N2  &kp N3     &kp N4    &kp N5                                                          &kp N1           &kp N2              &kp N3   &kp N4  &kp N5  &kp BACKSPACE
-&kp TAB     &kp Q   &kp W   &kp E      &kp R     &kp T                                                           &kp Q            &kp W               &kp E    &kp R   &kp T   &kp MINUS
-&kp LSHIFT  &kp A   &kp S   &kp D      &kp F     &kp G                                                           &kp A            &kp S               &kp D    &kp F   &kp G   &kp ENTER
-&kp GRAVE   &kp Z   &kp X   &kp C      &kp V     &kp B      &hm LG(TAB) LEFT_BRACKET    &hm PSCRN RIGHT_BRACKET  &kp Z            &kp X               &kp C    &kp V   &kp B   &kp BSLH
-                            &kp LCTRL  &kp LALT  &lt 1 TAB  &kp ENTER                   &lt 6 SPACE              &lt 2 BACKSPACE  &game_lock 0 EQUAL  &kp SQT
+&kp ESC     &kp N1  &kp N2  &kp N3     &kp N4    &kp N5                                            &kp N1           &kp N2              &kp N3   &kp N4  &kp N5  &kp BACKSPACE
+&kp TAB     &kp Q   &kp W   &kp E      &kp R     &kp T                                             &kp Q            &kp W               &kp E    &kp R   &kp T   &kp MINUS
+&kp LSHIFT  &kp A   &kp S   &kp D      &kp F     &kp G                                             &kp A            &kp S               &kp D    &kp F   &kp G   &kp ENTER
+&kp GRAVE   &kp Z   &kp X   &kp C      &kp V     &kp B      &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp Z            &kp X               &kp C    &kp V   &kp B   &kp BSLH
+                            &kp LCTRL  &kp LALT  &lt 1 TAB  &kp ENTER           &lt 6 SPACE        &lt 2 BACKSPACE  &game_lock 0 EQUAL  &kp SQT
             >;
         };
     };
