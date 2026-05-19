@@ -76,16 +76,6 @@
             tapping-term-ms = <300>;
             flavor = "tap-preferred";
         };
-
-        lt1: layer_tap1 {
-            compatible = "zmk,behavior-hold-tap";
-            label = "layer_tap1";
-            bindings = <&mo>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "hold-preferred";
-        };
     };
 
     /* [修复 3] 修正：条件层语法（去掉多余的尖括号） */
@@ -108,12 +98,30 @@
 &kp ESC         &kp N1        &kp N2          &kp N3      &kp N4       &kp N5                                                          &kp N6           &kp N7              &kp N8            &kp N9           &kp N0    &kp BACKSPACE
 &kp TAB         &hm ESCAPE Q  &kp W           &kp E       &kp R        &kp T                                                           &kp Y            &kp U               &kp I             &kp O            &kp P     &kp MINUS
 &kp LC(LSHIFT)  &kp A         &hm LEFT_ALT S  &hm LGUI D  &hm LSHFT F  &hm LCTRL G                                                     &hm RCTRL H      &hm RSHFT J         &hm RGUI K        &hm RIGHT_ALT L  &kp SEMI  &kp ENTER
-&kp GRAVE       &kp Z         &kp X           &kp C       &kp V        &kp B        &hm LA(LC(W)) LBKT    &hm LC(LG(A)) RIGHT_BRACKET  &kp N            &kp M               &kp COMMA         &kp DOT          &kp FSLH  &game_lock 6 BACKSLASH
-                                              &kp LCTRL   &kp LALT     &lt 1 TAB    &hm LEFT_GUI ENTER    &hm LC(SPACE) SPACE          &lt 2 BACKSPACE  &game_lock 0 EQUAL  &game_lock 5 SQT
+&kp GRAVE       &kp Z         &kp X           &kp C       &kp V        &kp B        &hm LA(LC(W)) LBKT    &hm LC(LG(A)) RIGHT_BRACKET  &kp N            &kp M               &kp COMMA         &kp DOT          &kp FSLH  &game_lock 1 BACKSLASH
+                                              &kp LCTRL   &kp LALT     &lt 3 TAB    &hm LEFT_GUI ENTER    &hm LC(SPACE) SPACE          &lt 4 BACKSPACE  &game_lock 0 EQUAL  &game_lock 2 SQT
             >;
         };
 
-        /* ========== 原有 Layer1（symbol）：完全保留 ========== */
+        Win_layer {
+            bindings = <
+&kp ESC         &kp N1        &kp N2          &kp N3      &kp N4       &kp N5                                                    &kp N6           &kp N7              &kp N8            &kp N9           &kp N0    &kp BACKSPACE
+&kp TAB         &hm ESCAPE Q  &kp W           &kp E       &kp R        &kp T                                                     &kp Y            &kp U               &kp I             &kp O            &kp P     &kp MINUS
+&kp LC(LSHIFT)  &kp A         &hm LEFT_ALT S  &hm LGUI D  &hm LSHFT F  &hm LCTRL G                                               &hm RCTRL H      &hm RSHFT J         &hm RGUI K        &hm RIGHT_ALT L  &kp SEMI  &kp ENTER
+&kp GRAVE       &kp Z         &kp X           &kp C       &kp V        &kp B        &hm LG(TAB) LBKT    &hm LA(A) RIGHT_BRACKET  &kp N            &kp M               &kp COMMA         &kp DOT          &kp FSLH  &game_lock 1 BACKSLASH
+                                              &kp LCTRL   &kp LALT     &lt 3 TAB    &hm LCTRL ENTER     &hm LC(SPACE) SPACE      &lt 4 BACKSPACE  &game_lock 0 EQUAL  &game_lock 2 SQT
+            >;
+        };
+
+        game_layer {
+            bindings = <
+&kp ESC     &kp N1  &kp N2  &kp N3     &kp N4    &kp N5                               &kp N6           &kp N7              &kp N8                     &kp N9   &kp N0    &game_lock 0 BACKSPACE
+&kp TAB     &kp Q   &kp W   &kp E      &kp R     &kp T                                &kp Y            &kp U               &kp I                      &kp O    &kp P     &kp MINUS
+&kp LSHIFT  &kp A   &kp S   &kp D      &kp F     &kp G                                &kp H            &kp J               &kp K                      &kp L    &kp SEMI  &kp ENTER
+&kp GRAVE   &kp Z   &kp X   &kp C      &kp V     &kp B      &kp LBKT     &kp RBKT     &kp N            &kp M               &kp COMMA                  &kp DOT  &kp FSLH  &kp BSLH
+                            &kp LCTRL  &kp LALT  &lt 3 TAB  &kp ENTER    &lt 0 SPACE  &lt 4 BACKSPACE  &game_lock 0 EQUAL  &game_lock 2 SINGLE_QUOTE
+            >;
+        };
 
         symbol {
             bindings = <
@@ -125,8 +133,6 @@
             >;
         };
 
-        /* ========== 原有 Layer2（navi）：完全保留 ========== */
-
         navi {
             bindings = <
 &trans     &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_4  &kp KP_NUMBER_5                    &kp KP_NUMBER_6    &kp KP_NUMBER_7  &kp KP_NUMBER_8   &kp KP_NUMBER_9  &kp KP_NUMBER_0  &trans
@@ -134,52 +140,6 @@
 &trans     &bt BT_DISC 0    &bt BT_DISC 1    &bt BT_DISC 2    &bt BT_DISC 3    &bt BT_DISC 4                      &kp LEFT           &kp DOWN         &kp UP_ARROW      &kp RIGHT        &kp RIGHT        &trans
 &trans     &bt BT_CLR       &trans           &trans           &trans           &trans           &trans    &trans  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp EQUAL         &kp LBKT         &kp RBKT         &kp BSLH
                                              &trans           &trans           &trans           &trans    &trans  &trans             &trans           &trans
-            >;
-        };
-
-        /* ========== 原有 Layer3（mouse_3）：完全保留 ========== */
-
-        mouse_3 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &none   &none   &none   &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans    &trans  &none   &none   &trans
-            >;
-        };
-
-        /* ========== 原有 Layer4（layer_4）：完全保留 ========== */
-
-        layer_4 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
-            >;
-        };
-
-        /* ========== 新增：通用游戏层（Layer5） ========== */
-
-        game_layer {
-            bindings = <
-&kp ESC     &kp N1  &kp N2  &kp N3     &kp N4    &kp N5                               &kp N6           &kp N7              &kp N8                     &kp N9   &kp N0    &game_lock 0 BACKSPACE
-&kp TAB     &kp Q   &kp W   &kp E      &kp R     &kp T                                &kp Y            &kp U               &kp I                      &kp O    &kp P     &kp MINUS
-&kp LSHIFT  &kp A   &kp S   &kp D      &kp F     &kp G                                &kp H            &kp J               &kp K                      &kp L    &kp SEMI  &kp ENTER
-&kp GRAVE   &kp Z   &kp X   &kp C      &kp V     &kp B      &kp LBKT     &kp RBKT     &kp N            &kp M               &kp COMMA                  &kp DOT  &kp FSLH  &kp BSLH
-                            &kp LCTRL  &kp LALT  &lt 1 TAB  &kp ENTER    &lt 0 SPACE  &lt 2 BACKSPACE  &game_lock 0 EQUAL  &game_lock 5 SINGLE_QUOTE
-            >;
-        };
-
-        Win_layer {
-            bindings = <
-&kp ESC         &kp N1        &kp N2          &kp N3      &kp N4       &kp N5                                                    &kp N6           &kp N7              &kp N8            &kp N9           &kp N0    &kp BACKSPACE
-&kp TAB         &hm ESCAPE Q  &kp W           &kp E       &kp R        &kp T                                                     &kp Y            &kp U               &kp I             &kp O            &kp P     &kp MINUS
-&kp LC(LSHIFT)  &kp A         &hm LEFT_ALT S  &hm LGUI D  &hm LSHFT F  &hm LCTRL G                                               &hm RCTRL H      &hm RSHFT J         &hm RGUI K        &hm RIGHT_ALT L  &kp SEMI  &kp ENTER
-&kp GRAVE       &kp Z         &kp X           &kp C       &kp V        &kp B        &hm LG(TAB) LBKT    &hm LA(A) RIGHT_BRACKET  &kp N            &kp M               &kp COMMA         &kp DOT          &kp FSLH  &game_lock 6 BACKSLASH
-                                              &kp LCTRL   &kp LALT     &lt 1 TAB    &hm LCTRL ENTER     &hm LC(SPACE) SPACE      &lt 2 BACKSPACE  &game_lock 0 EQUAL  &game_lock 5 SQT
             >;
         };
     };
