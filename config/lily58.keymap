@@ -63,9 +63,9 @@
 
         /* [修复 2] 修正：将 &toggle 改为 &tog (ZMK 标准行为) */
 
-        game_lock: game_lock {
+        layer_lock: layer_lock {
             compatible = "zmk,behavior-hold-tap";
-            label = "GAME_LOCK";
+            label = "LAYER_LOCK";
 
             /* ZMK hold-tap 顺序为：<&长按行为>, <&轻按行为> */
             /* 意图：轻按=退格，长按=切换游戏层 */
@@ -95,31 +95,31 @@
 
         default_layer {
             bindings = <
-&kp ESC         &kp N1        &kp N2          &kp N3      &kp N4       &kp N5                                                          &kp N6           &kp N7              &kp N8            &kp N9           &kp N0    &kp BACKSPACE
-&kp TAB         &hm ESCAPE Q  &kp W           &kp E       &kp R        &kp T                                                           &kp Y            &kp U               &kp I             &kp O            &kp P     &kp MINUS
-&kp LC(LSHIFT)  &kp A         &hm LEFT_ALT S  &hm LGUI D  &hm LSHFT F  &hm LCTRL G                                                     &hm RCTRL H      &hm RSHFT J         &hm RGUI K        &hm RIGHT_ALT L  &kp SEMI  &kp ENTER
-&kp GRAVE       &kp Z         &kp X           &kp C       &kp V        &kp B        &hm LA(LC(W)) LBKT    &hm LC(LG(A)) RIGHT_BRACKET  &kp N            &kp M               &kp COMMA         &kp DOT          &kp FSLH  &game_lock 1 BACKSLASH
-                                              &kp LCTRL   &kp LALT     &lt 3 TAB    &hm LEFT_GUI ENTER    &hm LC(SPACE) SPACE          &lt 4 BACKSPACE  &game_lock 0 EQUAL  &game_lock 2 SQT
+&kp ESC         &kp N1        &kp N2          &kp N3      &kp N4       &kp N5                                                          &kp N6           &kp N7               &kp N8             &kp N9           &kp N0    &kp BACKSPACE
+&kp TAB         &hm ESCAPE Q  &kp W           &kp E       &kp R        &kp T                                                           &kp Y            &kp U                &kp I              &kp O            &kp P     &kp MINUS
+&kp LC(LSHIFT)  &kp A         &hm LEFT_ALT S  &hm LGUI D  &hm LSHFT F  &hm LCTRL G                                                     &hm RCTRL H      &hm RSHFT J          &hm RGUI K         &hm RIGHT_ALT L  &kp SEMI  &kp ENTER
+&kp GRAVE       &kp Z         &kp X           &kp C       &kp V        &kp B        &hm LA(LC(W)) LBKT    &hm LC(LG(A)) RIGHT_BRACKET  &kp N            &kp M                &kp COMMA          &kp DOT          &kp FSLH  &layer_lock 1 BACKSLASH
+                                              &kp LCTRL   &kp LALT     &lt 3 TAB    &hm LEFT_GUI ENTER    &hm LC(SPACE) SPACE          &lt 4 BACKSPACE  &layer_lock 0 EQUAL  &layer_lock 2 SQT
             >;
         };
 
         Win_layer {
             bindings = <
-&kp ESC         &kp N1        &kp N2          &kp N3       &kp N4       &kp N5                                                   &kp N6           &kp N7              &kp N8            &kp N9           &kp N0    &kp BACKSPACE
-&kp TAB         &hm ESCAPE Q  &kp W           &kp E        &kp R        &kp T                                                    &kp Y            &kp U               &kp I             &kp O            &kp P     &kp MINUS
-&kp LC(LSHIFT)  &kp A         &hm LEFT_ALT S  &hm LCTRL D  &hm LSHFT F  &hm LGUI G                                               &hm RGUI H       &hm RSHFT J         &hm LC(RCTRL) K   &hm RIGHT_ALT L  &kp SEMI  &kp ENTER
-&kp GRAVE       &kp Z         &kp X           &kp C        &kp V        &kp B       &hm LG(TAB) LBKT    &hm LA(A) RIGHT_BRACKET  &kp N            &kp M               &kp COMMA         &kp DOT          &kp FSLH  &game_lock 1 BACKSLASH
-                                              &kp LCTRL    &kp LALT     &lt 3 TAB   &hm LCTRL ENTER     &hm LC(SPACE) SPACE      &lt 4 BACKSPACE  &game_lock 0 EQUAL  &game_lock 2 SQT
+&kp ESC         &kp N1        &kp N2          &kp N3       &kp N4       &kp N5                                                   &kp N6           &kp N7               &kp N8             &kp N9           &kp N0    &kp BACKSPACE
+&kp TAB         &hm ESCAPE Q  &kp W           &kp E        &kp R        &kp T                                                    &kp Y            &kp U                &kp I              &kp O            &kp P     &kp MINUS
+&kp LC(LSHIFT)  &kp A         &hm LEFT_ALT S  &hm LCTRL D  &hm LSHFT F  &hm LGUI G                                               &hm RGUI H       &hm RSHFT J          &hm LC(RCTRL) K    &hm RIGHT_ALT L  &kp SEMI  &kp ENTER
+&kp GRAVE       &kp Z         &kp X           &kp C        &kp V        &kp B       &hm LG(TAB) LBKT    &hm LA(A) RIGHT_BRACKET  &kp N            &kp M                &kp COMMA          &kp DOT          &kp FSLH  &layer_lock 1 BACKSLASH
+                                              &kp LCTRL    &kp LALT     &lt 3 TAB   &hm LCTRL ENTER     &hm LC(SPACE) SPACE      &lt 4 BACKSPACE  &layer_lock 0 EQUAL  &layer_lock 2 SQT
             >;
         };
 
         game_layer_base {
             bindings = <
-&kp ESC     &kp N1  &kp N2  &kp N3     &kp N4    &kp N5                                      &kp N6           &kp N7              &kp N8            &kp N9   &kp N0    &kp BACKSPACE
-&kp TAB     &kp Q   &kp W   &kp E      &kp R     &kp T                                       &kp Y            &kp U               &kp I             &kp O    &kp P     &kp MINUS
-&kp LSHIFT  &kp A   &kp S   &kp D      &kp F     &kp G                                       &kp H            &kp J               &kp K             &kp L    &kp SEMI  &kp ENTER
-&kp GRAVE   &kp Z   &kp X   &kp C      &kp V     &kp B      &hm LG(TAB) LBKT    &kp RBKT     &kp N            &kp M               &kp COMMA         &kp DOT  &kp FSLH  &game_lock 1 BACKSLASH
-                            &kp LCTRL  &kp LALT  &lt 3 TAB  &kp ENTER           &lt 5 SPACE  &lt 4 BACKSPACE  &game_lock 0 EQUAL  &kp SINGLE_QUOTE
+&kp ESC     &kp N1  &kp N2  &kp N3     &kp N4    &kp N5                                      &kp N6           &kp N7               &kp N8            &kp N9   &kp N0    &kp BACKSPACE
+&kp TAB     &kp Q   &kp W   &kp E      &kp R     &kp T                                       &kp Y            &kp U                &kp I             &kp O    &kp P     &kp MINUS
+&kp LSHIFT  &kp A   &kp S   &kp D      &kp F     &kp G                                       &kp H            &kp J                &kp K             &kp L    &kp SEMI  &kp ENTER
+&kp GRAVE   &kp Z   &kp X   &kp C      &kp V     &kp B      &hm LG(TAB) LBKT    &kp RBKT     &kp N            &kp M                &kp COMMA         &kp DOT  &kp FSLH  &layer_lock 1 BACKSLASH
+                            &kp LCTRL  &kp LALT  &lt 3 TAB  &kp ENTER           &lt 5 SPACE  &lt 4 BACKSPACE  &layer_lock 0 EQUAL  &kp SINGLE_QUOTE
             >;
         };
 
