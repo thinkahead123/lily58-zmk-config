@@ -145,12 +145,12 @@
 
         game_layer_2 {
             bindings = <
-&kp BACKSPACE  &kp N0    &kp N9     &kp N8         &kp N7    &kp N6                           &kp N5         &kp N4     &kp N3            &kp N2   &kp N1    &kp ESC
-&kp MINUS      &kp P     &kp O      &kp I          &kp U     &kp Y                            &kp T          &kp R      &kp E             &kp W    &kp Q     &kp TAB
-&kp ENTER      &kp SEMI  &kp L      &kp K          &kp J     &kp H                            &kp G          &kp F      &kp D             &kp S    &kp A     &kp LSHIFT
-&kp BSLH       &kp FSLH  &kp DOT    &kp COMMA      &kp M     &kp N    &kp RBKT     &kp LBKT   &kp B          &kp V      &kp C             &kp X    &kp Z     &kp GRAVE
-                            &kp SINGLE_QUOTE  &kp EQUAL  &kp BACKSPACE  &kp SPACE    &kp ENTER  &kp TAB  &kp LALT  &kp LCTRL
-            >;
-        };
+        &kp ESC     &kp N6  &kp N7  &kp N8     &kp N9    &kp N0                           &kp N1         &kp N2     &kp N3            &kp N4   &kp N5    &kp BACKSPACE
+        &kp TAB     &kp Y   &kp U   &kp I      &kp O     &kp P                            &kp Q          &kp W      &kp E             &kp R    &kp T     &kp MINUS
+        &kp LSHIFT  &kp H   &kp J   &kp K      &kp L     &kp SEMI                         &kp A          &kp S      &kp D             &kp F    &kp G     &kp ENTER
+        &kp GRAVE   &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH    &kp RBKT     &kp LBKT &kp Z          &kp X      &kp C             &kp V    &kp B     &kp BSLH
+                                    &kp LCTRL  &kp LALT  &kp TAB  &kp ENTER    &kp SPACE  &kp BACKSPACE  &kp EQUAL  &kp SINGLE_QUOTE
+                    >;
+        };    
     };
 };
